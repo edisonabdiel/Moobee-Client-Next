@@ -1,6 +1,7 @@
 // Custom made components 
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import MovieList from '../components/MovieList';
 // next.js custom tags
 import Head from 'next/head';
 // styles
@@ -19,11 +20,9 @@ const Layout = ({ children }) => {
             <div className={styles.container}>
                 <main className={styles.main}>
                     {children}
-                    {/* Here is where components will render later on */}
                 </main>
-
             </div>
-            <Footer></Footer>
+            <Footer />
         </>
     )
 }
